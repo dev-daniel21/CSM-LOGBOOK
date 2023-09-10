@@ -1,0 +1,38 @@
+spring:
+  profiles.active: H2
+  application.name: csm-logbook
+#  cloud.config.enabled: false
+  config:
+    import:
+      - classpath:database.yml
+
+
+#security.basic.enabled: false
+#management.security.enabled: false
+
+server.port: 8320
+
+---
+
+#spring:
+#  config:
+#    activate.on-profile: 'local-config'
+#    import: configserver:http://localhost:8305
+#  cloud:
+#    config:
+#      name: csm-login
+#      enabled: true
+
+#---
+#
+#spring:
+#  config:
+#    activate.on-profile: 'cloud-config'
+#    import: "optional:configserver:http://" # TODO
+#  cloud:
+#    config:
+#      name: csm-login
+#      enabled: true
+#      default-label: main
+#      label: directory
+#      uri: http://  # TODO
