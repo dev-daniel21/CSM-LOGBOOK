@@ -12,6 +12,7 @@ import java.util.UUID;
 @Entity
 @NoArgsConstructor
 @Getter
+public
 class LogBookEntry implements Serializable {
 
     @Id

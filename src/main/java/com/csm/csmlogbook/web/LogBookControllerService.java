@@ -1,6 +1,10 @@
-package com.csm.csmlogbook;
+package com.csm.csmlogbook.web;
 
 
+import com.csm.csmlogbook.AddNewLogbookEntryRequest;
+import com.csm.csmlogbook.LogBookEntry;
+import com.csm.csmlogbook.LogBookEntryRepository;
+import com.csm.csmlogbook.RolesClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
